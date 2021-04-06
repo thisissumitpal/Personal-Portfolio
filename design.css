@@ -1,0 +1,644 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*
+{
+    margin:0;
+    padding:0;
+    font-family: 'Lobster', cursive;
+    box-sizing: border-box;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+
+.name
+{
+    width:50%;
+    margin:0.4rem 2rem;
+    font-size: 1.7rem;
+}
+
+.name h2
+{
+    color:crimson;
+}
+
+span
+{
+    color: salmon;
+}
+     /*for rightNav*/
+    
+.rightNavbar
+{
+    width:50%;
+    text-decoration: none;
+    
+}
+
+
+.navbar
+{
+    display:flex;
+    background-color: rgb(105, 97, 97);
+    position:sticky;
+    top:0;
+    cursor: pointer;
+    
+
+}
+ .rightNavbar ul li
+{
+    list-style-type: none;
+    padding:0.9rem 2rem;
+    
+}
+.rightNavbar ul
+{
+    display:flex;
+    
+}
+
+.rightNavbar ul li a
+{
+ text-decoration: none;
+ color:white;
+font-size: 1.4rem;
+
+}
+
+.rightNavbar ul li a:hover
+{
+    color:crimson;
+}
+
+
+/* for first Name Section */
+.display
+{
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(27deg, #013A60 50%, #004E95 50%);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.display h2
+{
+ display:block;
+ width:fit-content;
+ font-size: 2.5rem;
+ position:relative;
+ color:transparent;
+ animation:sumit2 0.5s ease forwards;
+ animation-delay: 1s;
+}
+
+.display h2:nth-child(1)
+{
+    animation-delay:1s;
+
+}
+.display h2:nth-child(2)
+{
+    animation-delay: 2s;
+}
+.display h2:nth-child(3)
+{
+    animation-delay: 3s;
+}
+/*for span animation*/
+.display h2:nth-child(1) span
+{
+    animation-delay: 0.5s;
+}
+.display h2:nth-child(2) span
+{
+    animation-delay: 1.5s;
+}
+.display h2:nth-child(3) span
+{
+    
+    animation-delay: 2.5s;
+
+}
+.display h2 span
+{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:0;
+    background-color: black;;
+    animation: sumit 1s ease;
+    animation-delay: 0.3s;
+}
+
+/*for button styling*/
+ 
+ .button
+{
+    display:inline-block;
+    padding:1rem 2rem;
+    color:white;
+    background-color: transparent;
+    border :2px solid crimson;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-top: 1.6rem;
+    transition: .3s ease ;
+    transition-property: background-color,color;
+    text-decoration: none;
+    border-radius: 2rem;
+    
+}
+.button:hover
+{
+    color:white;
+    background-color: crimson;
+}
+
+
+/*keyframes for animation*/
+@keyframes sumit
+{
+    50%
+    {
+        width:100%;
+        left:0;
+    }
+    100%
+    {
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes sumit2
+{
+    100%
+    {
+        color: white;
+    }
+}
+
+/*Designing for About me section*/
+.AboutMe
+{
+    display:flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    max-width: 1500px;
+
+
+}
+
+.aboutTop .title
+{
+    font-size: 3rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+    margin-top: 1.2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.forImg .myImg
+{
+    margin-top: 2rem;
+    margin-right: 2.3rem;
+    width:91%;
+    height:92%;
+    border:2px solid black;
+    border-radius: 20px;
+}
+.aboutTop h2{
+    font-size: 2.1rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+    margin-top: 1.8rem;
+}
+
+.aboutTop p
+{
+    font-size: 1.2rem;
+}
+
+        /*designing for certificate*/
+.pforC
+{
+    font-size: 2.1rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+    margin-top: 1.8rem;
+    margin-left: 4rem;
+} 
+
+
+.para{
+    font-size: 1.2rem;
+    margin-left: 4rem;
+    font-weight: 100;
+}
+.Certificate
+{
+    height:380px;
+    /*display:flex;*/
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 90%;
+    /*margin: auto;*/
+    
+}
+.clogo .imgc
+{
+    width:40%;
+    height:38%;
+    margin-left: 50px;
+    border:2px solid black;
+    border-radius: 50%;
+    margin-left: 9rem;
+    
+}
+.forpara
+{
+    display: flex;
+   
+    
+}
+ /*for cisco certificate*/
+ .Cisco
+ {
+    height:380px;
+    /*display:flex;*/
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 90%;
+    /*margin: auto;*/
+ }
+ .forparaC
+ {
+    display: flex;
+    flex-direction: row-reverse;
+ }
+ .pforCis
+ {
+    font-size: 2.1rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+    margin-top: 1.8rem;
+    margin-left: 26rem;
+ }
+ .paraC
+ {
+    font-size: 1.2rem;
+    margin-left: 11rem;
+    font-weight: 100;
+ }
+ .clogoC .imgcIs
+{
+    width:80%;
+    height:76%;
+    margin-left: 50px;
+    border:2px solid black;
+    border-radius: 50%;
+    margin-left: 9rem;
+}
+    /*for Accenture Certificate*/
+
+.Accenture
+{
+    height:345px;
+    /*display:flex;*/
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 90%;
+    /*margin: auto;*/
+}
+.clogoA .imgcA
+{
+    width:50%;
+    height:60%;
+    margin-left: 50px;
+    border:2px solid black;
+    border-radius: 50%;
+    margin-left: 9rem;
+}
+/*Styling for Certificate button*/
+ .btn{
+    margin-left: 10rem;
+    margin-top: 0rem;
+    display:inline-block;
+    padding:0rem 2rem;
+    color:black;
+    background-color: transparent;
+    border :2px solid crimson;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-top: 0rem;
+    transition: .3s ease ;
+    transition-property: background-color,color;
+    text-decoration: none;
+    border-radius: 2rem;
+}
+.btn:hover
+{
+    color:white;
+    background-color: crimson; 
+}
+.btn2
+{
+    margin-left: 30rem;
+    margin-top: 0rem;
+    display:inline-block;
+    padding:0rem 2rem;
+    color:black;
+    background-color: transparent;
+    border :2px solid crimson;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-top: 0rem;
+    transition: .3s ease ;
+    transition-property: background-color,color;
+    text-decoration: none;
+    border-radius: 2rem;
+}
+.btn2:hover
+{
+    color:white;
+    background-color: crimson; 
+
+}
+
+        /*for contact me*/
+
+.contact-items
+{
+    width:400px;
+    margin-left: 500px;
+    margin-top: 2.5rem;
+
+}
+.contact-item
+{
+    width:80%;
+    padding:20px;
+    text-align: center;
+    border-radius: 10px;
+    padding:30px;
+    margin:30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+}
+.icon
+{
+    width:70px;
+    margin:0 auto;
+    margin-bottom: 10px;
+}
+
+.contact-info h1
+{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.contact-info h2
+{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+footer
+{
+    background:black;
+}
+ .textCenter
+{
+    text-align: center;
+    color: blanchedalmond;
+    padding:30px 20px;
+    font-size: 1rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+        /*designing for burger*/
+.burger
+{
+    position:relative;
+    cursor:pointer;
+    
+    display:none;
+}
+.line
+{
+    width:33px;
+    background-color: white;
+    height:4px;
+    margin:3px 3px;
+   
+}
+.D
+{
+    text-align: center;
+    color: blanchedalmond;
+    padding:1px 20px;
+    font-size: 1rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*for responciveness*/
+@media only screen and (max-width:1120px)
+{
+    .navbar
+    {
+        flex-direction: column;
+        height:310px;
+        transition: all 0.5s ease-out;
+        
+    }
+    .rightNavbar ul
+    {
+        flex-direction: column;
+        
+    }
+    .burger
+    {
+        display:block;
+        position:absolute;
+        top:15px;
+    }
+    .h-nav
+    {
+        height:49px;
+    }
+    .v-class
+    {
+        opacity: 0;
+    }
+    .AboutMe
+    {
+    
+            display: block; 
+            /* flex-direction: row-reverse; */
+           /* text-align: center;*/
+            max-width: 1500px;
+        max-width: 100%;
+
+    }
+    .forImg .myImg {
+        /*margin-top: 09rem; 
+        display: block;*/
+        /* margin-right: 2.3rem; */
+        width: 35%;
+        height: 38%;
+        border: 2px solid black;
+        border-radius: 20px;
+    }
+    .para {
+        font-size: 14px;
+        margin-left: 0.5rem;
+        font-weight: 100;
+    }
+    .pforC {
+        font-size: 1.6rem;
+        font-weight: 100;
+        margin-bottom: 1rem;
+        margin-top: 1.8rem;
+        margin-left: 0.5rem;
+    }
+    
+.clogo .imgc {
+    width: 53%;
+    height: 58%;
+    /* margin-left: 50px; */
+    margin-top: 2rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-left: 0.4rem;
+}
+.btn {
+    margin-left: 0.5rem;
+    margin-top: 0rem;
+    display: inline-block;
+    padding: 0rem 0.4rem;
+    color: black;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-top: 1rem;
+    transition: .3s ease;
+    transition-property: background-color,color;
+    text-decoration: none;
+    border-radius: 2rem;
+}
+.pforCis {
+    font-size: 1.6rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+    margin-top: 12.8rem;
+    margin-left: 0.5rem;
+}
+.clogoC .imgcIs {
+    width: 99%;
+    height: 62%;
+   /* margin-left: 50px;*/
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-left: 0rem;
+    margin-top: 2.1rem;
+}
+.Cisco {
+    height: 421px;
+    /* display: flex; */
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 90%;
+    /* margin: auto; */
+}
+.paraC {
+    font-size: 14px;
+    margin-left: 0.4rem;
+    font-weight: 100;
+}
+
+.btn2 {
+    margin-left: 3rem;
+    margin-top: 0rem;
+    display: inline-block;
+    padding: 0rem 0.2rem;
+    color: black;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-top: 1rem;
+    transition: .3s ease;
+    transition-property: background-color,color;
+    text-decoration: none;
+    border-radius: 2rem;
+}
+.clogoA .imgcA {
+    width: 72%;
+    height: 67%;
+    margin-top: 1.2rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-left: 0.4rem;
+}
+.Accenture {
+    height: 376px;
+    /* display: flex; */
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 90%;
+    /* margin: auto; */
+}
+.contact-items {
+    width: 351px;
+    margin-left: 9px;
+    margin-top: 2.5rem;
+}
+.aboutTop .title {
+    font-size: 2.2rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+    margin-top: 1.2rem;
+    /* text-align: center; */
+    margin-right: 63px;
+    text-transform: uppercase;
+}
+
+.display h2 {
+    display: block;
+    width: fit-content;
+    font-size: 2rem;
+    margin-right: 8rem;
+    position: relative;
+    color: transparent;
+    animation: sumit2 0.5s ease forwards;
+    animation-delay: 1s;
+}
+.aboutTop p {
+    font-size: 14px;
+    font-weight: 100;
+}
+.aboutTop h2 {
+    font-size: 1.6rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+    margin-top: 1.8rem;
+}
+}
